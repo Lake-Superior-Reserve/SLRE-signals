@@ -26,7 +26,7 @@ Data used in the analyses are sourced from publicly funded programs (e.g., NOAA,
 
 ├── data_wrangling/           # scripts that pull data from public sources and formats them for use in other scripts
 
-│   ├── NWIS.R                # Ingests Water Level data from the Duluth Tidal Station (NOAA Tides and Currents)
+│   ├── NWIS_pull.R                # Ingests USGS Discharge data from St Louis River at Scanlon
 
 │   ├── EPA_WATERQUALITY.R    # Ingests historic SLRE water quality data
 
