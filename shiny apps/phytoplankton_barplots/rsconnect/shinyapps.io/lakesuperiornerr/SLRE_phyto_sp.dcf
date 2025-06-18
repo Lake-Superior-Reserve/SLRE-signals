@@ -1,0 +1,12 @@
+name: SLRE_phyto_sp
+title: SLRE_phyto_sp
+username: lakesuperiornerr
+account: lakesuperiornerr
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14958663
+bundleId: 10481334
+url: https://lakesuperiornerr.shinyapps.io/SLRE_phyto_sp/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
