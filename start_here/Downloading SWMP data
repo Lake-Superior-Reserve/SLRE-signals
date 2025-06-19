@@ -1,0 +1,21 @@
+SWMP data in the SLRE-signal repository's "swmp_data" folder were last updated 6/19/2025 
+- We advize always beginning any synthesis or analysis with the most recent data downloaded from the SWMP database
+To obtain the most recent System-wide Monitoring Program Data from the Centralized Data Management Office follow these steps:
+
+1. Navigate to https://cdmo.baruch.sc.edu/
+2. Click on "View/Download Data"
+3. Click on "Advanced Query System"
+4. Under the heading "Zip Downloads" - click on the blue button, "Choose ZIP Files"
+5. Scroll down to find Lake Superior, WI
+6. Click on the small box to the left of Lake Superior, WI - and all the small boxes that show up underneath
+7. With boxes selected (blue check mark), scroll down and select the blue button, "Submit locations and proceed to next step"
+8. Select the data range in the drop down menus From: 2012 To: current year - Click on "Get Files"
+9. Enter required information to receive data files through email
+10. Click Submit
+11. You will receive an email from cdmowebmaster@baruch.sc.edu verifying that your data files are processing.
+12. Within a few minutes you will then receive an email with a URL link to download the data files
+13. Download the Zipped File Folder and extract files.
+14. Rename the folder containing these files, "swmp_data" and save it in the R project folder in the swmp_data folder (SLRE-signal/swmp_data)
+  -replace the existing files if they are present already
+15. These data files are now ready to be processed by various data_wrangling scripts. 
+    
