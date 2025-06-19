@@ -3,7 +3,7 @@
 # Licensed under the MIT License. See LICENSE file for details.
 
 # a list required packages
-package_list <- c("tidyverse", "dataRetrieval") 
+package_list <- c("tidyverse", "dataRetrieval", "httr", "jsonlite") 
 
 # a list of required packages you already have installed on your machine
 installed <- rownames(installed.packages()) 
