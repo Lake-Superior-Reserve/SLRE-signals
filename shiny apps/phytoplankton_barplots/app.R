@@ -92,12 +92,17 @@ plot_division_stacked <- function(phyto_df, shape_df, site_info_df,
     scale_y_continuous(labels = label_comma()) +
     facet_wrap(~ Display.Site, ncol = 1) +
     labs(
-      title = paste("Biovolume of", paste(division_names, collapse = ", ")),
+      title = "Biovolume of phytoplankton divisions in the St. Louis River Estuary 2023-2024",
       x     = NULL,
       y     = "Total Biovolume (10³ µm³/mL)"
     ) +
     theme_minimal() +
-    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+    theme(
+      axis.text.x = element_text(angle = 45, hjust = 1),
+      legend.text = element_text(size = 14),
+      legend.title = element_blank(),
+      strip.text = element_text(size = 16)  # facet labels (site names)
+    )
 }
 
 #—— 5) SHINY UI —————————————————————————————————————————————————————

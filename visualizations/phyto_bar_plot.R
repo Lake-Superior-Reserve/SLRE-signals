@@ -60,7 +60,7 @@ plot_division_stacked <- function(phyto_df, shape_df, site_info_df,
                  y = total_biovolume, 
                  fill = Division)) +
     geom_col() +
-    scale_fill_manual(name = "Division", values = full_div_colors) +
+    scale_fill_manual(name = NULL, values = full_div_colors) +
     scale_x_date(
       date_breaks = "2 months",
       date_labels = function(x, ...) tolower(format(x, "%b-%y"))
@@ -70,9 +70,9 @@ plot_division_stacked <- function(phyto_df, shape_df, site_info_df,
     labs(
       title = paste("Biovolume of",
                     paste(division_names, collapse = ", "),
-                    "by Site"),
+                    "by site"),
       x     = NULL,
-      y     = "Total Biovolume (×10³ µm³/mL)"
+      y     = "Total Biovolume (10³ µm³/mL)"
     ) +
     theme_minimal() +
     theme(
@@ -80,12 +80,14 @@ plot_division_stacked <- function(phyto_df, shape_df, site_info_df,
     )
 }
 
+#you can now use this plotting function to plot any number of stacked bar charts with phytoplankton
+#divisions for any number of sites
 plot_division_stacked(
   phyto_df       = edi_phyto,
   shape_df       = edi_phyto_shape,
   site_info_df   = edi_site_info,
-  site_names     = c("Allouez Bay", "Billings Park"),
+  site_names     = c("Barker's Island"), #choose sites to plot, any from list in edi_site_info "Full.Site.Name" 
   division_names = c("centric diatoms",
                      "pennate diatoms",
-                     "cyanobacteria")
+                     "cyanobacteria")  # choose taxonomic division to plot, any from list in edi_phyto_shape "Division"
 )
